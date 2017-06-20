@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <title>Assignment 4.4</title>
+           <style>
+                   /*create box size inside the div*/
+                  .box {
+                        width:100px;
+                        height:100px;
+                        padding:10px;
+                        margin:0;
+                        border:1px solid red;
+                      } 
+                    div {
+                            width: 100px;
+                            height: 100px;
+                            background: red;
+                            position: relative;
+                           -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+                            animation: mymove 5s infinite;
+                      }
+
+                    /* Safari 4.0 - 8.0 */
+                      @-webkit-keyframes mymove {
+                      from {left: 0px;}
+                   to {left: 500px;}
+                     }
+
+                  @keyframes mymove {
+                       from {left: 0px;}
+                       to {left: 500px;}
+                     }
+           </style>
+      </head>
+       <body>
+
+          <p>Make an element go from 0px to 500px from the left. The animation should take 5 seconds and it should go on forever (infinitely).</p>
+          <div class="box"><img src="bicycle.jpg" alt="bycle" width="100" /></div>
+
+       </body>
+</html>
